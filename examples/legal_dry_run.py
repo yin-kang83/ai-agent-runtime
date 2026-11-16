@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""端到端干跑：legal-domains 规则 → Claim/Evidence → runtime → HumanGate。"""
+"""端到端干跑：domain-kb 规则 → Claim/Evidence → runtime → HumanGate。"""
 from __future__ import annotations
 
 import argparse
@@ -112,8 +112,8 @@ def run_dry(rule: RuleView, human: str = "approve") -> dict:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="legal-domains + ai-agent-runtime 端到端干跑")
-    ap.add_argument("--legal-root", default=r"E:\legal-domains")
+    ap = argparse.ArgumentParser(description="domain-kb + runtime 端到端干跑")
+    ap.add_argument("--legal-root", default="domain-kb")
     ap.add_argument("--domain", choices=["econ-law", "tax-law"], default="econ-law")
     ap.add_argument("--rule-id", default="LAW-001")
     ap.add_argument("--human", choices=["approve", "deny", "none"], default="approve")

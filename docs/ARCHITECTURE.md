@@ -66,5 +66,5 @@ Claim           ← LLM 抽取结果或外部输入
 不替代确定性引擎
 ```
 
-具体领域逻辑放在 `legal-domains/domains/*` 或 `fin-agent`，
+具体领域逻辑放在 `domain-kb/domains/*` 或 `fin-agent`，
 本仓库只定义运行时的最小协议。

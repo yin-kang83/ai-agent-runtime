@@ -5,7 +5,7 @@
 ## 运行
 
 ```powershell
-cd E:\ai-agent-runtime
+cd ai-agent-runtime
 $env:PYTHONPATH = (Get-Location).Path + "\src"
 
 python examples/legal_dry_run.py --domain econ-law --rule-id LAW-001 --human approve
@@ -34,8 +34,8 @@ none    → needs_human
 ## 数据依赖
 
 ```text
-E:\legal-domains\domains\econ-law\knowledge\rules.json
-E:\legal-domains\domains\tax-law\tax_rules\cards.json
+domain-kb/domains/econ-law/knowledge/rules.json
+domain-kb/domains/tax-law/tax_rules/cards.json
 ```
 
 规则变了，干跑会自动读新数据；不需要改 runtime。
