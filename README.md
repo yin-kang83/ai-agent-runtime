@@ -1,5 +1,8 @@
 # ai-agent-runtime
 
+> DOI: [10.5281/zenodo.24295144](https://doi.org/10.5281/zenodo.24295144)
+
+
 > 面向确定性财务/法律智能体的 Agent 运行时骨架。
 > 不调用模型、不存 Prompt、不存密钥；只负责：Claim/Evidence、验证、失败关闭、人类门、有限递归。
 
